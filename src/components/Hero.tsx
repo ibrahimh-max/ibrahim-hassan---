@@ -24,31 +24,30 @@ const Hero = () => {
         </div>
 
         <h1 className="opacity-0 animate-fade-in animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-          I build systems that{' '}
-          <span className="text-gradient">teach</span>,{' '}
+          <span className="text-gradient">Builder</span>,{' '}
+          <span className="text-gradient-accent">Engineer</span>,{' '}
           <br className="hidden sm:block" />
-          not just tools that{' '}
-          <span className="text-gradient-accent">respond</span>.
+          Problem Solver.
         </h1>
 
         <p className="opacity-0 animate-fade-in animation-delay-400 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-          I'm Ibrahim Hassan. I learn by building real systems—from AI education 
-          platforms to hardware circuits. Currently focused on making AI that 
-          actually understands how you think.
+          I'm Ibrahim Hassan. I build real-world tech products—from AI education 
+          platforms to embedded hardware systems. Turning ideas into working solutions.
         </p>
 
         <div className="opacity-0 animate-fade-in animation-delay-600 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#projects"
+            href="/resume.pdf"
+            download
             className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25"
           >
-            View My Work
+            Download Resume
           </a>
           <a
-            href="#about"
+            href="#projects"
             className="px-6 py-3 bg-secondary text-secondary-foreground font-medium rounded-lg hover:bg-secondary/80 transition-colors border border-border"
           >
-            Learn More
+            View My Work
           </a>
         </div>
       </div>
