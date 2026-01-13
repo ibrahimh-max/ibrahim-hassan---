@@ -16,11 +16,11 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-              href="mailto:hello@ibrahimhassan.dev"
+              href="mailto:yourname@gmail.com"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25"
             >
               <Mail className="w-4 h-4" />
-              Send an Email
+              Email Me
             </a>
           </div>
 
