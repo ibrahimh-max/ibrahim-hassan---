@@ -1,38 +1,65 @@
 import { ArrowDown } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+const words = ['apps', 'websites', 'circuits', 'AI Agents'];
 
 const Hero = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 1400);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-hero" />
-      
-      {/* Subtle grid pattern */}
-      <div 
+
+      <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: '60px 60px',
         }}
       />
 
       <div className="section-container relative z-10 text-center pt-20">
         <div className="opacity-0 animate-fade-in">
           <span className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-            Student Engineer & Builder
+            Engineering student. Real builder.
           </span>
         </div>
 
+<<<<<<< HEAD
         <h1 className="opacity-0 animate-fade-in animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
           <span className="text-gradient">Builder</span>,{' '}
           <span className="text-gradient-accent">Engineer</span>,{' '}
           <br className="hidden sm:block" />
           Problem Solver.
+=======
+        <h1 className="opacity-0 animate-fade-in animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
+          <span className="font-bold">Building</span>{' '}
+          <span className="text-gradient transition-all duration-300">
+            {words[index]}
+          </span>
+>>>>>>> 48ae53c (resume add krna hai abhi)
         </h1>
 
+        <p className="opacity-0 animate-fade-in animation-delay-300 text-xl md:text-2xl font-semibold mb-4">
+          Suffering from PeniaPhobia
+        </p>
+
         <p className="opacity-0 animate-fade-in animation-delay-400 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
+<<<<<<< HEAD
           I'm Ibrahim Hassan. I build real-world tech products—from AI education 
           platforms to embedded hardware systems. Turning ideas into working solutions.
+=======
+          I'm Ibrahim Hassan. I’m building an AI tutor called Edurance, along with apps,
+          websites, and systems that solve real problems — not just look good in demos.
+>>>>>>> 48ae53c (resume add krna hai abhi)
         </p>
 
         <div className="opacity-0 animate-fade-in animation-delay-600 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -52,9 +79,11 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in animation-delay-600">
-        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+        >
           <span className="text-xs font-medium">Scroll</span>
           <ArrowDown className="w-4 h-4 animate-bounce" />
         </a>

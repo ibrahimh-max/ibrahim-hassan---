@@ -6,24 +6,27 @@ const About = () => {
           <div>
             <span className="text-primary text-sm font-medium uppercase tracking-wider">About</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6">
-              Building to understand,<br />
-              <span className="text-muted-foreground">not to impress.</span>
+              Building to understand,
+              <br />
+              <span className="text-muted-foreground">not to show off.</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I don't learn by watching tutorials or memorizing theory. I learn by building 
-                systems that force me to understand every layer—from the hardware up to 
-                the user experience.
+                I mostly learn by doing. Sometimes I watch tutorials, but real learning
+                starts when I try to build something myself and get stuck.
               </p>
               <p>
-                My current focus is on AI-driven education. Not chatbots that answer questions, 
-                but systems that diagnose how students think and guide them through their 
-                conceptual gaps. I believe education technology should adapt to the learner, 
-                not the other way around.
+                College doesn’t really teach me what I want to learn. A lot of it feels
+                forced and boring, and there aren’t many teachers who explain things in a
+                way that clicks for me. So I teach myself by building things I care about.
               </p>
               <p>
-                When I'm not writing code, I'm designing circuits, exploring embedded systems, 
-                or thinking about how to make complex ideas accessible.
+                Right now I’m building Edurance — an AI tutor. It’s hard, messy, and still
+                under development, but it pushes me to learn new concepts every day.
+                That’s the kind of challenge I enjoy.
+              </p>
+              <p>
+                When I’m not coding, I watch sitcoms, read startup books, and play football.
               </p>
             </div>
           </div>
@@ -37,7 +40,7 @@ const About = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Systems Thinking</h3>
                   <p className="text-sm text-muted-foreground">
-                    Every project I build considers the full stack—from user needs to implementation details.
+                    I like understanding how things work from top to bottom, not just one layer.
                   </p>
                 </div>
               </div>
@@ -49,7 +52,7 @@ const About = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Hardware + Software</h3>
                   <p className="text-sm text-muted-foreground">
-                    I bridge the gap between physical systems and digital solutions.
+                    I enjoy working where software meets real-world hardware.
                   </p>
                 </div>
               </div>
@@ -61,13 +64,12 @@ const About = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Education-First AI</h3>
                   <p className="text-sm text-muted-foreground">
-                    Building AI that teaches, not just responds—understanding gaps before filling them.
+                    I’m trying to build AI that can actually teach, not just answer questions.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Decorative glow */}
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl -z-10 blur-xl" />
           </div>
         </div>

@@ -1,46 +1,64 @@
-import { ArrowUpRight, Brain, Cpu, Globe } from 'lucide-react';
+import { ArrowUpRight, Brain, Cpu, Globe, Mail } from 'lucide-react';
 
 const projects = [
   {
     title: 'Edurance',
-    subtitle: 'AI-Powered Personal Tutor',
-    description: 'Not a chatbot—a diagnostic learning system. Edurance identifies conceptual gaps in student understanding and provides step-by-step guided learning paths. Built with a dual-agent architecture: a diagnostic agent that maps knowledge gaps, and a tutor agent that adapts explanations in real-time.',
-    tags: ['AI/ML', 'Education', 'Multi-Agent Systems'],
+    subtitle: 'AI Tutor I’m Actively Building',
+    description:
+      'Edurance is an AI-based tutoring system I’m building because teachers today aren’t enough and many don’t explain things well. The idea is to make AI agents that actually teach step by step instead of just answering questions. It’s still under development and very hard, but that’s what makes it exciting.',
+    tags: ['AI', 'Education', 'Agents'],
     icon: Brain,
     featured: true,
     highlights: [
-      'Diagnostic agent identifies knowledge gaps before teaching',
-      'Tutor agent adapts explanations to individual learning patterns',
-      'Step-by-step guidance, not just Q&A responses',
+      'Built to teach, not just answer',
+      'Uses AI agents instead of chatbots',
+      'Still evolving as I learn',
     ],
   },
   {
-    title: 'Proximity Alert Circuit',
-    subtitle: 'Hardware-Only Design',
-    description: 'A distance-sensing alert system built entirely from discrete components—no microcontroller, no software. Uses an ultrasonic sensor paired with a 555 timer circuit to demonstrate that elegant solutions often come from understanding fundamentals, not adding complexity.',
-    tags: ['Embedded Systems', 'Hardware', '555 Timer'],
-    icon: Cpu,
+    title: 'Zap Mail',
+    subtitle: 'Email Automation Tool',
+    description:
+      'Zap Mail is a tool I built to automate boring email tasks. It helps in sending, managing, and organizing emails faster so people don’t waste time doing the same things again and again. This project taught me a lot about backend logic, automation, and real-world workflows.',
+    tags: ['Automation', 'Email', 'Backend'],
+    icon: Mail,
     featured: false,
     highlights: [
-      'Zero software dependency—pure analog/digital logic',
-      'Ultrasonic distance sensing with adjustable thresholds',
-      'Demonstrates first-principles hardware design',
+      'Automates repetitive email tasks',
+      'Built for real usage, not demo',
+      'Helped me understand backend systems',
+    ],
+  },
+  {
+    title: 'FastPark',
+    subtitle: 'Smart Parking System',
+    description:
+      'FastPark is a system I built to make parking easier and faster. The idea is to help users find available parking spots quickly instead of wasting time searching. It focuses on solving a real daily-life problem.',
+    tags: ['Smart Systems', 'IoT', 'Web'],
+    icon: Globe,
+    featured: false,
+    highlights: [
+      'Solves a real-world daily problem',
+      'Focus on speed and simplicity',
+      'Built to be practical, not fancy',
     ],
   },
   {
     title: 'HackPrix Season 2',
-    subtitle: 'Hackathon Platform',
-    description: 'A clean, responsive multi-page website for a competitive hackathon. Focused on clear information architecture and smooth user experience for participants navigating registration, schedules, and resources.',
-    tags: ['Web Development', 'UI/UX', 'Event Platform'],
+    subtitle: 'Hackathon Website',
+    description:
+      'I built a website for a hackathon so participants could easily find schedules, speakers, and details. The goal was simple: make it clear, fast, and easy to use.',
+    tags: ['Web', 'UI', 'Hackathon'],
     icon: Globe,
     featured: false,
     highlights: [
-      'Responsive design across all device sizes',
-      'Clear navigation and information hierarchy',
-      'Built with modern web standards',
+      'Easy to navigate',
+      'Works on all devices',
+      'Built for real users',
     ],
   },
 ];
+
 
 const Projects = () => {
   return (
@@ -48,17 +66,15 @@ const Projects = () => {
       <div className="section-container">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider">Projects</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-3">
-            Selected Work
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mt-3">My Work</h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Projects that reflect how I think—each one built to deeply understand a problem, 
-            not just solve it superficially.
+            These are projects I actually cared about building — not just for marks,
+            but because they interested me.
           </p>
         </div>
 
         <div className="space-y-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
               className={`card-elevated overflow-hidden transition-all duration-300 hover:border-primary/30 ${
@@ -73,7 +89,7 @@ const Projects = () => {
                   </div>
                 </div>
               )}
-              
+
               <div className={`p-8 ${project.featured ? 'md:col-span-3' : ''}`}>
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <div className="flex items-center gap-3">

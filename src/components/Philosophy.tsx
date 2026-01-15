@@ -3,18 +3,21 @@ import { Lightbulb, Layers, Target } from 'lucide-react';
 const principles = [
   {
     icon: Layers,
-    title: 'Build to Understand',
-    description: 'Theory without practice is incomplete. I learn best when I can see how all the pieces connect—from the lowest hardware layer to the highest abstraction.',
+    title: 'Build to Really Learn',
+    description:
+      'If I just copy code from a tutorial, it feels fake. Real learning happens when I try things myself, get stuck, and figure out why something works.',
   },
   {
     icon: Target,
-    title: 'Solve Real Problems',
-    description: 'I don\'t build toy projects. Every system I create addresses a genuine challenge, whether it\'s helping students learn or demonstrating hardware fundamentals.',
+    title: 'Work That Matters',
+    description:
+      'I don’t enjoy boring calculator or tracker projects. I like building things that can change how people learn or live, like Edurance.',
   },
   {
     icon: Lightbulb,
-    title: 'First Principles First',
-    description: 'Before reaching for frameworks, I understand the fundamentals. This is why I can build an alert system without a microcontroller—and know when to use one.',
+    title: 'Try Before Saying No',
+    description:
+      'I don’t say “I don’t know.” I say “I haven’t tried yet.” Most things feel hard only before you start.',
   },
 ];
 
@@ -31,11 +34,8 @@ const Philosophy = () => {
           </div>
 
           <div className="space-y-8">
-            {principles.map((principle, index) => (
-              <div
-                key={principle.title}
-                className="flex gap-6 items-start group"
-              >
+            {principles.map((principle) => (
+              <div key={principle.title} className="flex gap-6 items-start group">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <principle.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -49,17 +49,15 @@ const Philosophy = () => {
             ))}
           </div>
 
-          {/* Quote block */}
           <div className="mt-16 relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-accent rounded-full" />
             <blockquote className="pl-8">
               <p className="text-xl md:text-2xl font-medium leading-relaxed">
-                "I don't want to just use AI—I want to understand how to build systems 
-                that genuinely help people learn. That requires going deeper than 
-                prompts and APIs."
+                "I don’t want to just use AI. I want to build my own systems, even if they’re
+                messy, slow, or imperfect — as long as they actually help people learn."
               </p>
               <footer className="mt-4 text-muted-foreground">
-                — My approach to Edurance
+                — My approach to building Edurance
               </footer>
             </blockquote>
           </div>

@@ -5,7 +5,7 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = () => {   
       setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
@@ -47,10 +47,11 @@ const Navigation = () => {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <a
-              href="#contact"
+              href="/resume.pdf"
+              download
               className="hidden md:inline-flex px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors"
             >
-              Get in Touch
+              Download Resume
             </a>
           </div>
         </div>
