@@ -15,15 +15,12 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-<<<<<<< HEAD
-              href="mailto:yourname@gmail.com"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25"
-=======
+
               href="https://mail.google.com/mail/?view=cm&fs=1&to=955ibrahimhassan@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all"
->>>>>>> 48ae53c (resume add krna hai abhi)
+
             >
               <Mail className="w-4 h-4" />
               Email Me

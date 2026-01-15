@@ -33,19 +33,11 @@ const Hero = () => {
           </span>
         </div>
 
-<<<<<<< HEAD
         <h1 className="opacity-0 animate-fade-in animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
           <span className="text-gradient">Builder</span>,{' '}
           <span className="text-gradient-accent">Engineer</span>,{' '}
           <br className="hidden sm:block" />
           Problem Solver.
-=======
-        <h1 className="opacity-0 animate-fade-in animation-delay-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-          <span className="font-bold">Building</span>{' '}
-          <span className="text-gradient transition-all duration-300">
-            {words[index]}
-          </span>
->>>>>>> 48ae53c (resume add krna hai abhi)
         </h1>
 
         <p className="opacity-0 animate-fade-in animation-delay-300 text-xl md:text-2xl font-semibold mb-4">
@@ -53,13 +45,8 @@ const Hero = () => {
         </p>
 
         <p className="opacity-0 animate-fade-in animation-delay-400 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-<<<<<<< HEAD
           I'm Ibrahim Hassan. I build real-world tech products—from AI education 
           platforms to embedded hardware systems. Turning ideas into working solutions.
-=======
-          I'm Ibrahim Hassan. I’m building an AI tutor called Edurance, along with apps,
-          websites, and systems that solve real problems — not just look good in demos.
->>>>>>> 48ae53c (resume add krna hai abhi)
         </p>
 
         <div className="opacity-0 animate-fade-in animation-delay-600 flex flex-col sm:flex-row items-center justify-center gap-4">
